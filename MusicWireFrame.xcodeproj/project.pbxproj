@@ -14,6 +14,7 @@
 		5047B9662237E6A800ED1E52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5047B9642237E6A800ED1E52 /* LaunchScreen.storyboard */; };
 		5047B9712237E6A800ED1E52 /* MusicWireFrameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5047B9702237E6A800ED1E52 /* MusicWireFrameTests.swift */; };
 		5047B97C2237E6A800ED1E52 /* MusicWireFrameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5047B97B2237E6A800ED1E52 /* MusicWireFrameUITests.swift */; };
+		5047B98A22380A7800ED1E52 /* musette.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5047B98922380A7800ED1E52 /* musette.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		5047B9772237E6A800ED1E52 /* MusicWireFrameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicWireFrameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5047B97B2237E6A800ED1E52 /* MusicWireFrameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicWireFrameUITests.swift; sourceTree = "<group>"; };
 		5047B97D2237E6A800ED1E52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5047B98922380A7800ED1E52 /* musette.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = musette.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				5047B9622237E6A800ED1E52 /* Assets.xcassets */,
 				5047B9642237E6A800ED1E52 /* LaunchScreen.storyboard */,
 				5047B9672237E6A800ED1E52 /* Info.plist */,
+				5047B98922380A7800ED1E52 /* musette.mp3 */,
 			);
 			path = MusicWireFrame;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5047B98A22380A7800ED1E52 /* musette.mp3 in Resources */,
 				5047B9662237E6A800ED1E52 /* LaunchScreen.storyboard in Resources */,
 				5047B9632237E6A800ED1E52 /* Assets.xcassets in Resources */,
 				5047B9612237E6A500ED1E52 /* Main.storyboard in Resources */,

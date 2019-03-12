@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -18,13 +19,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var pauseBackground: UIView!
     @IBOutlet weak var forwardBackground: UIView!
     
+    var audioPlayer: AVAudioPlayer? = nil
+    
     
     var isPlaying: Bool = true {
         didSet {
             if isPlaying {
                 pauseButton.setImage(UIImage(named: "pause")!, for: .normal)
+                audioPlayer?.play()
             } else {
                 pauseButton.setImage(UIImage(named: "play")!, for: .normal)
+                audioPlayer?.pause()
             }
         }
     }
@@ -39,11 +44,20 @@ class ViewController: UIViewController {
             $0!.alpha = 0.0
         }
         
+        guard let url: URL = Bundle.main.url(forResource: "musette", withExtension: "mp3") else {
+            return
+        }
         
-        
-        
-        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+        } catch {
+            return
+        }
     }
+    
+        
+        
+    
 
     @IBAction func pauseButtonPressed(_ sender: UIButton) {
         if isPlaying {
