@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MusicWireFrame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Cm-06-tJn">
+                                <rect key="frame" x="16" y="20" width="343" height="343"/>
+                                <color key="backgroundColor" red="0.61568627450000002" green="0.35294117650000001" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5Cm-06-tJn" secondAttribute="height" multiplier="1:1" id="V8Q-9G-cTn"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EFL-L3-3RR">
+                                <rect key="frame" x="36.5" y="408" width="70" height="70"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="ida-tY-Hem"/>
+                                    <constraint firstAttribute="width" constant="70" id="mYq-tt-XFS"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g5a-6g-mIc">
+                                <rect key="frame" x="152.5" y="408" width="70" height="70"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="ngJ-B7-tOt"/>
+                                    <constraint firstAttribute="height" constant="70" id="uGh-Wk-Phv"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ysr-pe-Z5W">
+                                <rect key="frame" x="268.5" y="408" width="70" height="70"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Phi-2i-cpF"/>
+                                    <constraint firstAttribute="height" constant="70" id="SAI-bs-2U0"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="56" translatesAutoresizingMaskIntoConstraints="NO" id="8iz-vL-OoX">
+                                <rect key="frame" x="41.5" y="413" width="292" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vr-14-rZn">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <state key="normal" image="reverse"/>
+                                        <connections>
+                                            <action selector="touchedDownInside:" destination="BYZ-38-t0r" eventType="touchDown" id="w6z-CS-Ohe"/>
+                                            <action selector="touchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q3m-10-42Q"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8wd-85-p5c">
+                                        <rect key="frame" x="116" y="0.0" width="60" height="60"/>
+                                        <state key="normal" image="pause"/>
+                                        <connections>
+                                            <action selector="pauseButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="35x-rT-eHt"/>
+                                            <action selector="touchedDownInside:" destination="BYZ-38-t0r" eventType="touchDown" id="xCw-Z3-ZGZ"/>
+                                            <action selector="touchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eqG-88-10v"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKN-jg-Gmv">
+                                        <rect key="frame" x="232" y="0.0" width="60" height="60"/>
+                                        <state key="normal" image="forward"/>
+                                        <connections>
+                                            <action selector="touchedDownInside:" destination="BYZ-38-t0r" eventType="touchDown" id="9ER-8O-Phg"/>
+                                            <action selector="touchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Att-MD-yHP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5Cm-06-tJn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="2mB-eW-Ded"/>
+                            <constraint firstItem="8iz-vL-OoX" firstAttribute="top" secondItem="5Cm-06-tJn" secondAttribute="bottom" constant="50" id="DK1-o4-8BH"/>
+                            <constraint firstItem="ysr-pe-Z5W" firstAttribute="centerY" secondItem="OKN-jg-Gmv" secondAttribute="centerY" id="KaR-PO-dLi"/>
+                            <constraint firstItem="g5a-6g-mIc" firstAttribute="centerX" secondItem="8wd-85-p5c" secondAttribute="centerX" id="PW8-1S-rpL"/>
+                            <constraint firstItem="g5a-6g-mIc" firstAttribute="centerY" secondItem="8wd-85-p5c" secondAttribute="centerY" id="QEh-7k-TvF"/>
+                            <constraint firstItem="5Cm-06-tJn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Qlr-FS-evl"/>
+                            <constraint firstItem="8iz-vL-OoX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dt6-Do-8XI"/>
+                            <constraint firstItem="5Cm-06-tJn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jvM-XI-Fmk"/>
+                            <constraint firstItem="ysr-pe-Z5W" firstAttribute="centerX" secondItem="OKN-jg-Gmv" secondAttribute="centerX" id="pzf-8E-BZ7"/>
+                            <constraint firstItem="EFL-L3-3RR" firstAttribute="centerY" secondItem="7vr-14-rZn" secondAttribute="centerY" id="tDV-Xa-tun"/>
+                            <constraint firstItem="EFL-L3-3RR" firstAttribute="centerX" secondItem="7vr-14-rZn" secondAttribute="centerX" id="xdE-3W-P03"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="albumImageView" destination="5Cm-06-tJn" id="Om5-ab-wU7"/>
+                        <outlet property="forwardBackground" destination="ysr-pe-Z5W" id="XfI-3O-itc"/>
+                        <outlet property="forwardButton" destination="OKN-jg-Gmv" id="BSh-H8-MW1"/>
+                        <outlet property="pauseBackground" destination="g5a-6g-mIc" id="Dj7-fD-fRL"/>
+                        <outlet property="pauseButton" destination="8wd-85-p5c" id="Sl6-9R-NVZ"/>
+                        <outlet property="reverseBackground" destination="EFL-L3-3RR" id="lch-Sb-Pr0"/>
+                        <outlet property="reverseButton" destination="7vr-14-rZn" id="DQc-EZ-QSr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="forward" width="60" height="60"/>
+        <image name="pause" width="60" height="60"/>
+        <image name="reverse" width="60" height="60"/>
+    </resources>
+</document>
